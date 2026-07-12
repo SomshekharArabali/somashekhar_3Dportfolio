@@ -435,7 +435,8 @@ h2.section-title{
 
 /* ============ TIMELINE ============ */
 .timeline{border-left:1px solid var(--line); padding-left:36px; position:relative; max-width:760px;}
-.tl-item{position:relative; padding-bottom:8px;}
+.tl-item{position:relative; padding-bottom:52px;}
+.tl-item:last-child{padding-bottom:8px;}
 .tl-item::before{
   content:'';
   position:absolute; left:-42px; top:4px;
@@ -447,6 +448,9 @@ h2.section-title{
 .tl-years{font-family:var(--mono); color:var(--amber); font-size:.72rem; letter-spacing:.12em; margin-bottom:6px;}
 .tl-title{font-family:var(--head); font-size:1.4rem; margin-bottom:10px;}
 .tl-desc{color:var(--text-dim); line-height:1.8; max-width:680px;}
+.tl-list{color:var(--text-dim); line-height:1.75; max-width:680px; padding-left:20px;}
+.tl-list li{margin-bottom:6px;}
+.tl-list li::marker{color:var(--cyan);}
 .tl-stats{display:flex; gap:14px; margin-top:20px;}
 .tl-stat{
   border:1px solid var(--line); padding:12px 20px;
@@ -719,7 +723,7 @@ h2.section-title{
   <section id="training">
     <div class="eyebrow reveal">FILE 02</div>
     <h2 class="section-title reveal delay1">Training Record</h2>
-    <p class="section-sub reveal delay2">Formal education &amp; the disciplines it forged.</p>
+    <p class="section-sub reveal delay2">Formal education, plus the internships that put it into practice.</p>
 
     <div class="timeline reveal">
       <div class="tl-item">
@@ -729,6 +733,35 @@ h2.section-title{
         <div class="tl-stats">
           <div class="tl-stat"><span class="tl-stat-num">9.6</span><span class="tl-stat-label">CGPA</span></div>
           <div class="tl-stat"><span class="tl-stat-num">#1</span><span class="tl-stat-label">Institute&nbsp;Rank</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-years">22 MAR 2025 — 22 JUL 2025</div>
+        <div class="tl-title">Intern Programmer · COEPTECH Virtual Math Lab, Pune</div>
+        <ul class="tl-list">
+          <li>Contributed to the NMEICT Virtual Lab initiative by the Ministry of Education, a national-level collaboration with 11 premier institutes</li>
+          <li>Worked on simulation development and debugging for math lab visualizations and interactive learning modules</li>
+          <li>Developed and managed HTML/CSS/JS code embedded in Excel sheets using Java for seamless offline simulation deployment</li>
+          <li>Used a vibe-coding approach to keep the code modular, clean, and highly readable for future contributors</li>
+          <li>Collaborated with academic and technical mentors to align features with pedagogical goals</li>
+        </ul>
+        <div class="chip-row" style="margin-top:14px;">
+          <span class="chip">Java</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Apache POI</span><span class="chip">Excel</span><span class="chip">Vibe Coding</span>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-years">JAN 2020 — JUL 2020 · PUNE, MAHARASHTRA</div>
+        <div class="tl-title">Software Development Intern · Aroma Brand Solutions</div>
+        <ul class="tl-list">
+          <li>Contributed to multiple web applications, including a resume builder and a real-estate listing platform, using React and Bootstrap</li>
+          <li>Focused on responsive design, optimizing user experience across devices and screen sizes</li>
+          <li>Collaborated with senior developers through code reviews and feedback cycles to improve code quality and architecture</li>
+          <li>Delivered production-ready features within deadlines while adhering to modern development standards and best practices</li>
+        </ul>
+        <div class="chip-row" style="margin-top:14px;">
+          <span class="chip">React</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Bootstrap</span><span class="chip">Git</span>
         </div>
       </div>
     </div>
